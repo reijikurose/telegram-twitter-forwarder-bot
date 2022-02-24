@@ -1,0 +1,38 @@
+{
+    "name": "telegram-twitter-forwarder-bot",
+    "repository": "https://github.com/reijikurose/telegram-twitter-forwarder-bot",
+    "env": {
+        "TELEGRAM_BOT_TOKEN": {
+            "description": "",
+            "required": "True"
+        },
+        "TWITTER_CONSUMER_KEY": {
+            "description": "",
+            "required": "True"
+        },
+        "WITTER_CONSUMER_SECRET": {
+            "description": "",
+            "required": "True"
+        },
+        "TWITTER_ACCESS_TOKEN": {
+            "description": "",
+            "required": "True"
+        },
+        "TWITTER_ACCESS_TOKEN_SECRET": {
+            "description": "",
+            "required": "True"
+        }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
