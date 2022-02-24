@@ -1,0 +1,27 @@
+{
+    "name": "arcane-atoll-36951",
+    "logo": "https://telegra.ph//file/98ae5c5b2b722a49e0641.jpg",
+    "repository": "https://github.com/franciscod/telegram-twitter-forwarder-bot",
+    "env": {
+        "TELEGRAM_BOT_TOKEN ": {
+            "description": "value",
+            "required": "True"
+        },
+        "TWITTER_CONSUMER_SECRET ": {
+            "description": "value",
+            "required": "True"
+        }
+    },
+    "stack": "heroku-20",
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
