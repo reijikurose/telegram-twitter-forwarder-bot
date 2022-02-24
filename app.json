@@ -10,7 +10,7 @@
             "description": "",
             "required": "True"
         },
-        "WITTER_CONSUMER_SECRET": {
+        "TWITTER_CONSUMER_SECRET": {
             "description": "",
             "required": "True"
         },
